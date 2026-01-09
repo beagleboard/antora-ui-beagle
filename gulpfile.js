@@ -117,7 +117,7 @@ module.exports = exportTasks(
   lintTask,
   formatTask,
   buildTask,
-  bundleTask,
+  bundleBuildTask,
   bundlePackTask,
   previewTask,
   previewBuildTask,
