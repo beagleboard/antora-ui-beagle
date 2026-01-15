@@ -279,6 +279,7 @@ body {
     top: 50%;
   }
 
+  .navbar-item .navbar-link,
   .navbar-end > .navbar-item,
   .navbar-end .navbar-link {
     color: var(--navbar-font-color);

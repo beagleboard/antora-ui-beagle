@@ -10,12 +10,23 @@
         <span></span>
       </button>
     </div>
+
     <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">More</a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://www.beagleboard.org/about">About</a>
+          <a class="navbar-item" href="https://www.beagleboard.org/donate">Donate</a>
+          <a class="navbar-item" href="https://gsoc.beagleboard.org/">GSoC</a>
+        </div>
+      </div>
+
       <div class="navbar-item search hide-for-print">
         <div id="search-field" class="field">
           <input id="search-input" type="text" placeholder="Search the docs"{{#if page.home}} autofocus{{/if}}>
         </div>
       </div>
+
       <div class="navbar-end">
         <a class="navbar-item" href="https://openbeagle.org/">
           <span class="icon">
