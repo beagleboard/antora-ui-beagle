@@ -26,7 +26,7 @@ body {
 .navbar-brand {
   display: flex;
   flex: auto;
-  flex-wrap: wrap;
+  padding-left: 1rem;
 }
 
 .navbar-brand .navbar-item {
@@ -39,7 +39,6 @@ body {
   font-size: calc(22 / var(--rem-base) * 1rem);
   flex-wrap: wrap;
   line-height: 1;
-  padding-left: 1rem;
 }
 
 .navbar-brand .navbar-item:first-child a {
@@ -191,28 +190,19 @@ body {
   white-space: nowrap;
 }
 
-@media screen and (max-width: 480px) {
-  :root {
-    --navbar-height: var(--navbar-height-mobile);
-  }
-
-  .navbar-item.search {
-    order: 99;
-    flex: none;
-    width: 100%;
-    justify-content: center;
-  }
-
-  #search-field {
-    width: 100%;
-  }
-
-  #search-input {
-    width: 100%;
+@media screen and (max-width: 768.5px) {
+  .navbar-brand .navbar-item.search {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 @media screen and (min-width: 769px) {
+  .navbar-brand .navbar-item.search {
+    padding-right: 0;
+    margin-right: 0.5rem;
+  }
+
   #search-input {
     width: 200px;
   }
