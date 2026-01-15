@@ -1,4 +1,5 @@
 body.landing .nav-container,
+body.landing .toc.embedded,
 body.landing .toc.sidebar {
   display: none !important;
 }
