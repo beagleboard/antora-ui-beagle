@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{> head defaultPageTitle='Untitled'}}
+</head>
+
+<body class="article{{#with (or page.attributes.role page.role)}} {{{this}}}{{/with}}">
+  {{> header}}
+
+  <div class="container">
+    <section>
+      <h1>Boards</h1>
+
+      <div class="card-grid">
+        {{#each page.attributes.boards}}
+        {{#with (lookup @root.site.components id) as | comp |}}
+        <a class="card" href="{{relativize comp.latest.url}}">
+          <header>
+            <h3>{{comp.latest.title}}</h3>
+          </header>
+          <hr>
+          <img src="{{relativize (concat comp.latest.url " /../_images/logo.webp")}}">
+          <hr>
+          <p>
+            {{comp.asciidoc.attributes.description}}
+          </p>
+        </a>
+        {{/with}}
+        {{/each}}
+      </div>
+    </section>
+  </div>
+
+  {{> footer}}
+</body>
+
+</html>
