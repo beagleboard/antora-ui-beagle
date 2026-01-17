@@ -2,10 +2,13 @@
   color: var(--toc-font-color);
 }
 
-.toc.sidebar .toc-menu {
-  margin-right: 0.75rem;
+.toc.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   position: sticky;
   top: var(--toc-top);
+  margin-right: 0.75rem;
 }
 
 .toc .toc-menu h3 {
