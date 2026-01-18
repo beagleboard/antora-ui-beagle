@@ -18,10 +18,14 @@
   --color-jet-80: #191919;
   --color-black: #000;
   /* fonts */
-  --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
-  --body-font-size: 1.0625em; /* 17px */
-  --body-font-size--desktop: 1.125em; /* 18px */
-  --body-font-size--print: 0.9375em; /* 15px */
+  --rem-base: 18;
+  /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
+  --body-font-size: 1.0625em;
+  /* 17px */
+  --body-font-size--desktop: 1.125em;
+  /* 18px */
+  --body-font-size--print: 0.9375em;
+  /* 15px */
   --body-line-height: 1.15;
   --body-font-color: var(--color-jet-70);
   --body-font-family: "Roboto", sans-serif;
@@ -143,4 +147,57 @@
   --z-index-toolbar: 2;
   --z-index-page-version-menu: 3;
   --z-index-navbar: 4;
+}
+
+:root[data-theme="dark"] {
+  --color-white: #121212;
+  --color-smoke-10: #1e1e1e;
+  --color-smoke-30: #252525;
+  --color-smoke-50: #333;
+  --color-smoke-70: #424242;
+  --color-smoke-90: #191919;
+  --color-gray-10: #444;
+  --color-gray-30: #666;
+  --color-gray-40: #888;
+  --color-gray-50: #aaa;
+  --color-gray-70: #ccc;
+  --color-jet-20: #ddd;
+  --color-jet-30: #eee;
+  --color-jet-50: #f0f0f0;
+  --color-jet-70: #f5f5f5;
+  --color-jet-80: #fff;
+  --color-black: #fff;
+  /* Component colors */
+  --body-background: var(--color-white);
+  --panel-background: var(--color-smoke-30);
+  --panel-border-color: var(--color-smoke-50);
+  --nav-background: var(--color-smoke-10);
+  --nav-border-color: var(--color-smoke-50);
+  --nav-heading-font-color: var(--color-jet-30);
+  --nav-muted-color: var(--color-gray-50);
+  --nav-secondary-background: var(--color-smoke-30);
+  --toolbar-background: var(--color-smoke-10);
+  --toolbar-border-color: var(--color-smoke-50);
+  --toolbar-font-color: var(--color-gray-50);
+  --doc-font-color: var(--color-jet-50);
+  --heading-font-color: var(--color-jet-80);
+  --link-font-color: #64b5f6;
+  --abstract-background: var(--color-smoke-30);
+  --abstract-font-color: var(--color-jet-30);
+  --admonition-background: var(--color-smoke-30);
+  --code-background: #2d2d2d;
+  --example-background: var(--color-smoke-20);
+  --sidebar-background: var(--color-smoke-10);
+  --footer-background: #000;
+  --footer-font-color: var(--color-gray-50);
+  --footer-link-font-color: var(--color-jet-70);
+  --table-stripe-background: var(--color-smoke-30);
+  --navbar-background: #000;
+  --navbar-font-color: #fff;
+  --navbar-button-background: #000;
+  --navbar-button-border-color: #333;
+  --navbar-button-font-color: #fff;
+  --navbar-menu-background: #111;
+  --navbar-menu-font-color: #fff;
+  --navbar-menu_hover-background: #222;
 }
