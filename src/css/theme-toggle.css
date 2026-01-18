@@ -1,0 +1,38 @@
+/* Theme Toggle Button Styles */
+/* Theme Toggle Button Styles */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  color: inherit;
+}
+
+.theme-toggle:focus {
+  outline: none;
+}
+
+.theme-toggle .icon {
+  display: none;
+}
+
+/* Default (Light Mode) or Explicit Light Mode */
+.theme-toggle .sun-icon,
+[data-theme="light"] .theme-toggle .sun-icon {
+  display: block;
+}
+
+[data-theme="light"] .theme-toggle .moon-icon {
+  display: none;
+}
+
+/* Dark Mode */
+[data-theme="dark"] .theme-toggle .sun-icon {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle .moon-icon {
+  display: block;
+}
