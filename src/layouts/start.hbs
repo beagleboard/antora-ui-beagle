@@ -9,6 +9,8 @@
   {{> header}}
 
   <div class="container">
+    {{> article}}
+
     <section>
       <h1>Boards</h1>
 
@@ -20,7 +22,7 @@
             <h3>{{comp.latest.title}}</h3>
           </header>
           <hr>
-          <img src="{{relativize (concat comp.latest.url "/../_images/logo.webp")}}">
+          <img src="{{relativize (concat comp.latest.url " /../_images/logo.webp")}}">
           <hr>
           <p>
             {{comp.asciidoc.attributes.description}}

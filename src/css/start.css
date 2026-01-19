@@ -5,6 +5,11 @@
   padding: 1rem;      /* inner spacing */
 }
 
+.container .doc {
+  margin: 0;
+  padding: 0;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
