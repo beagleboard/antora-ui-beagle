@@ -182,6 +182,7 @@
   --doc-font-color: var(--color-jet-50);
   --heading-font-color: var(--color-jet-80);
   --link-font-color: #64b5f6;
+  --link_hover-font-color: #82b1ff;
   --abstract-background: var(--color-smoke-30);
   --abstract-font-color: var(--color-jet-30);
   --admonition-background: var(--color-smoke-30);
