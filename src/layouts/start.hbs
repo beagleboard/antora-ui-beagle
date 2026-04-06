@@ -19,17 +19,8 @@
       <div class="card-grid">
         {{#each page.attributes.boards}}
         {{#with (lookup @root.site.components this) as | comp |}}
-        <a class="card" href="{{relativize comp.latest.url}}">
-          <header>
-            <h3>{{comp.latest.title}}</h3>
-          </header>
-          <hr>
-          <img src="{{relativize (concat comp.latest.url " /../_images/logo.webp")}}">
-          <hr>
-          <p>
-            {{comp.asciidoc.attributes.description}}
-          </p>
-        </a>
+        {{> card card-title=comp.latest.title card-image=(relativize (concat comp.latest.url " /../_images/logo.webp"))
+        card-desc=comp.asciidoc.attributes.description card-url=(relativize comp.latest.url)}}
         {{/with}}
         {{/each}}
       </div>
@@ -41,15 +32,8 @@
       <div class="card-grid">
         {{#each page.attributes.tools}}
         {{#with (lookup @root.site.components this) as | comp |}}
-        <a class="card" href="{{relativize comp.latest.url}}">
-          <header>
-            <h3>{{comp.latest.title}}</h3>
-          </header>
-          <hr>
-          <p>
-            {{comp.asciidoc.attributes.description}}
-          </p>
-        </a>
+        {{> card card-title=comp.latest.title card-desc=comp.asciidoc.attributes.description card-url=(relativize
+        comp.latest.url)}}
         {{/with}}
         {{/each}}
       </div>
@@ -61,15 +45,8 @@
       <div class="card-grid">
         {{#each page.attributes.projects}}
         {{#with (lookup @root.site.components this) as | comp |}}
-        <a class="card" href="{{relativize comp.latest.url}}">
-          <header>
-            <h3>{{comp.latest.title}}</h3>
-          </header>
-          <hr>
-          <p>
-            {{comp.asciidoc.attributes.description}}
-          </p>
-        </a>
+        {{> card card-title=comp.latest.title card-desc=comp.asciidoc.attributes.description card-url=(relativize
+        comp.latest.url)}}
         {{/with}}
         {{/each}}
       </div>

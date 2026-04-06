@@ -1,7 +1,31 @@
 <article class="doc">
-{{#with page.title}}
-<h1 class="page">{{{this}}}</h1>
-{{/with}}
-{{{page.contents}}}
-{{> pagination}}
+  {{#with page.title}}
+  <h1 class="page">{{{this}}}</h1>
+  {{/with}}
+  {{{page.contents}}}
+
+  <br>
+
+  {{#if (eq page.attributes.role "board-index")}}
+  <section>
+    <div class="card-grid">
+      {{> board-index-card card-title="1. Introduction" fname="01-introduction" card-desc=(concat "Introduction to "
+      page.attributes.component-title " board with information on each component location
+      on both front and back of the board.")}}
+      {{> board-index-card card-title="2. Quick Start" fname="02-quick-start" card-desc="Getting started guide to enable
+      you to start building your projects in no time."}}
+      {{> board-index-card card-title="3. Design & Specification" fname="03-design-and-specifications" card-desc=(concat
+      "Hardware and mechanical design and specifications of " page.attributes.component-title " board for those who want
+      to know their board inside and out.")}}
+      {{> board-index-card card-title="4. Expansion" fname="04-expansion" card-desc="Connector pinout diagrams with
+      expansion details so that you can easily debug your connections and create custom expansion hardware."}}
+      {{> board-index-card card-title="5. Demos" fname="05-demos" card-desc=(concat "Demos and tutorials to quickly
+      learn about " page.attributes.component-title " capabilities.")}}
+      {{> board-index-card card-title="6. Support" fname="06-support" card-desc="Additional supporting information,
+      images, documents, change history and hardware & software repositories including issue trackers."}}
+    </div>
+  </section>
+  {{/if}}
+
+  {{> pagination}}
 </article>
