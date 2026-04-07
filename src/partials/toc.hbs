@@ -6,7 +6,7 @@
   {{#if page.component.asciidoc.attributes.oshw}}
   <a class="card" href="https://certification.oshwa.org/{{lower page.component.asciidoc.attributes.oshw}}.html">
     <header>
-      <h4>{{page.component.title}}</h4>
+      <h4>{{splitColon page.component.title}}</h4>
     </header>
     <hr>
     <img src="{{relativize (concat page.url " /../_images/oshw.svg")}}" alt="">
