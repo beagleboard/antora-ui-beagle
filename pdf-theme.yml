@@ -1,0 +1,29 @@
+# Default Theme: https://github.com/asciidoctor/asciidoctor-pdf/blob/main/data/themes/default-theme.yml
+
+extends: default
+
+page_background_color: 'FFFFFF'
+example_background_color: 'ededee'
+sidebar_background_color: 'cbccce'
+table_body_stripe_background_color: 'cbccce'
+base_font_color: '000000'
+base_border_color: '4f4f51'
+mark_background_color: '8EC969'
+link_font_color: '23b0e6'
+
+title-page:
+  text-align: center
+  title:
+    font-style: bold
+    font-color: '4f4f51'
+    top: 5vh
+  subtitle:
+    font-style: normal
+    display: ' '
+  logo:
+    align: center
+    top: 20vh
+  authors:
+    margin-top: 600pt
+  revision:
+    delimiter: ': '

@@ -1,15 +1,19 @@
 {
-  "name": "@antora/ui-default",
-  "description": "An archetype project that produces a UI for creating documentation sites with Antora",
-  "homepage": "https://gitlab.com/antora/antora-ui-default",
+  "name": "@beagleboard/antora-ui",
+  "version": "1.0.0",
+  "description": "An archetype project that produces a UI for creating documentation sites with Antora for BeagleBoard.org Foundation",
+  "homepage": "https://github.com/beagleboard/antora-ui-beagle",
   "license": "MPL-2.0",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/antora/antora-ui-default.git"
+    "url": "https://github.com/beagleboard/antora-ui-beagle"
   },
   "engines": {
     "node": ">= 8.0.0"
   },
+  "files": [
+    "pdf-theme.yml"
+  ],
   "browserslist": [
     "last 2 versions"
   ],
@@ -52,5 +56,8 @@
     "stylelint": "~13.3",
     "stylelint-config-standard": "~20.0",
     "vinyl-fs": "~3.0"
+  },
+  "scripts": {
+    "test": "exit 0"
   }
 }
