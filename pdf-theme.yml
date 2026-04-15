@@ -27,3 +27,8 @@ title-page:
     margin-top: 600pt
   revision:
     delimiter: ': '
+
+image:
+  caption:
+    align: center
+    text-align: center
