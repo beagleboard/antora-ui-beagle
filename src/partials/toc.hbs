@@ -9,7 +9,7 @@
       <h4>{{splitColon page.component.title}}</h4>
     </header>
     <hr>
-    <img src="{{relativize (concat page.url " /../_images/oshw.svg")}}" alt="">
+    {{> oshw-icon oshw-id=(upper page.component.asciidoc.attributes.oshw)}}
   </a>
   {{/if}}
 </aside>

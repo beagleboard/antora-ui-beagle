@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "DejaVu Sans Mono";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url(~@fontsource/dejavu-mono/files/dejavu-mono-latin-400-normal.woff2) format("woff2"),
+    url(~@fontsource/dejavu-mono/files/dejavu-mono-latin-400-normal.woff) format("woff");
+}
+
+@font-face {
+  font-family: "DejaVu Sans Mono";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url(~@fontsource/dejavu-mono/files/dejavu-mono-latin-700-normal.woff2) format("woff2"),
+    url(~@fontsource/dejavu-mono/files/dejavu-mono-latin-700-normal.woff) format("woff");
+}
